@@ -40,7 +40,7 @@ public class TestyouLogin {
 		String actualTitle = driver.getTitle();
 		String expectedTitle = "My Title";
 		assertEquals(actualTitle, expectedTitle);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.close();
 	}
 	
