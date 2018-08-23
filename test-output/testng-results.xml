@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="192210" started-at="2018-08-23T10:47:55Z" finished-at="2018-08-23T10:51:07Z">
+  <suite name="Default suite" duration-ms="84322" started-at="2018-08-23T10:56:47Z" finished-at="2018-08-23T10:58:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="192210" started-at="2018-08-23T10:47:55Z" finished-at="2018-08-23T10:51:07Z">
+    <test name="Default test" duration-ms="84322" started-at="2018-08-23T10:56:47Z" finished-at="2018-08-23T10:58:11Z">
       <class name="validate.TestyouLogin">
-        <test-method status="PASS" signature="TestYouLoginCase1()[pri:0, instance:validate.TestyouLogin@7dc7cbad]" name="TestYouLoginCase1" duration-ms="101399" started-at="2018-08-23T16:17:55Z" finished-at="2018-08-23T16:19:36Z">
+        <test-method status="PASS" signature="TestYouLoginCase1()[pri:0, instance:validate.TestyouLogin@7dc7cbad]" name="TestYouLoginCase1" duration-ms="52266" started-at="2018-08-23T16:26:47Z" finished-at="2018-08-23T16:27:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestYouLoginCase1 -->
-        <test-method status="FAIL" signature="TestYouLoginCase2()[pri:0, instance:validate.TestyouLogin@7dc7cbad]" name="TestYouLoginCase2" duration-ms="90542" started-at="2018-08-23T16:19:36Z" finished-at="2018-08-23T16:21:07Z">
+        <test-method status="FAIL" signature="TestYouLoginCase2()[pri:0, instance:validate.TestyouLogin@7dc7cbad]" name="TestYouLoginCase2" duration-ms="31964" started-at="2018-08-23T16:27:39Z" finished-at="2018-08-23T16:28:11Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [My Title] but found [Student Dashboard | Test Maker - TestYou]]]>
