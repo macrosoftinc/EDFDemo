@@ -1,5 +1,7 @@
 package validate;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -23,6 +25,23 @@ public class TestyouLogin {
 		Thread.sleep(3000);
 		driver.close();
 	}
+	@Test
+	public static void TestYouLoginCase2() throws Exception {
 
+		System.out.println(" Executing Testyou urls Case1");
+		System.setProperty("webdriver.chrome.driver", "F:\\selenium-files\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://testyou.in/Login.aspx");
+		Thread.sleep(2000);
+		driver.manage().window().maximize();
+		driver.findElement(By.name("ctl00$CPHContainer$txtUserLogin")).sendKeys("macadmin");
+		driver.findElement(By.name("ctl00$CPHContainer$txtPassword")).sendKeys("macadmin");
+		driver.findElement(By.name("ctl00$CPHContainer$btnLoginn")).click();
+		String actualTitle = driver.getTitle();
+		String expectedTitle = "My Title";
+		assertEquals(actualTitle, expectedTitle);
+		Thread.sleep(3000);
+		driver.close();
+	}
 	
 }
