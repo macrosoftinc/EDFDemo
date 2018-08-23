@@ -1,50 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="60843" started-at="2018-08-23T10:03:36Z" finished-at="2018-08-23T10:04:37Z">
+  <suite name="Default suite" duration-ms="192210" started-at="2018-08-23T10:47:55Z" finished-at="2018-08-23T10:51:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="60843" started-at="2018-08-23T10:03:36Z" finished-at="2018-08-23T10:04:37Z">
+    <test name="Default test" duration-ms="192210" started-at="2018-08-23T10:47:55Z" finished-at="2018-08-23T10:51:07Z">
       <class name="validate.TestyouLogin">
-        <test-method status="FAIL" signature="TestYouLoginCase1()[pri:0, instance:validate.TestyouLogin@7dc7cbad]" name="TestYouLoginCase1" duration-ms="60626" started-at="2018-08-23T15:33:36Z" finished-at="2018-08-23T15:34:36Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="PASS" signature="TestYouLoginCase1()[pri:0, instance:validate.TestyouLogin@7dc7cbad]" name="TestYouLoginCase1" duration-ms="101399" started-at="2018-08-23T16:17:55Z" finished-at="2018-08-23T16:19:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestYouLoginCase1 -->
+        <test-method status="FAIL" signature="TestYouLoginCase2()[pri:0, instance:validate.TestyouLogin@7dc7cbad]" name="TestYouLoginCase2" duration-ms="90542" started-at="2018-08-23T16:19:36Z" finished-at="2018-08-23T16:21:07Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:32:19.891Z'
-System info: host: 'MAC-LAP-101', ip: '192.168.43.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\hprasad\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
-Session ID: 78028c7a598c2e58a8753ef5fd37f71e]]>
+              <![CDATA[expected [My Title] but found [Student Dashboard | Test Maker - TestYou]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=68.0.3440.106)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:32:19.891Z'
-System info: host: 'MAC-LAP-101', ip: '192.168.43.44', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\hprasad\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
-Session ID: 78028c7a598c2e58a8753ef5fd37f71e
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:438)
-	at validate.TestyouLogin.TestYouLoginCase1(TestyouLogin.java:24)
+              <![CDATA[java.lang.AssertionError: expected [My Title] but found [Student Dashboard | Test Maker - TestYou]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at validate.TestyouLogin.TestYouLoginCase2(TestyouLogin.java:42)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -71,10 +50,10 @@ Session ID: 78028c7a598c2e58a8753ef5fd37f71e
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestYouLoginCase1 -->
+        </test-method> <!-- TestYouLoginCase2 -->
       </class> <!-- validate.TestyouLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
